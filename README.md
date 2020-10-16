@@ -71,7 +71,7 @@ To deploy a single instance for productive usage, we recommend to apply at least
 ```bash
 docker run -d \
     -p 8080:8080 \
-    --name "ml-workspace" -v "${PWD}:/workspace" \
+    --name "ml-workspace" -v "/${PWD}:/workspace" \
     --env AUTHENTICATE_VIA_JUPYTER="mytoken" \
     --shm-size 512m \
     --restart always \
@@ -721,7 +721,7 @@ docker run --env EXECUTE_CODE="git+https://github.com/dagshub/ml-workspace.git#s
 In the following example, we mount and execute the current working directory (expected to contain our code) into the `/workspace/ml-job/` directory of the workspace:
 
 ```bash
-docker run -v "${PWD}:/workspace/ml-job/" --env EXECUTE_CODE="/workspace/ml-job/" dagshub/ml-workspace:latest
+docker run -v "/${PWD}:/workspace/ml-job/" --env EXECUTE_CODE="/workspace/ml-job/" dagshub/ml-workspace:latest
 ```
 
 #### Install Dependencies
