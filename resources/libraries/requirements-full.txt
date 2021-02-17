@@ -57,7 +57,7 @@ fuzzywuzzy==0.17.0
 gensim==3.8.1
 geocoder==1.38.1
 geojson==2.5.0
-geopandas==0.8.0
+geopandas==0.8.2
 geoplotlib==0.3.2
 geopy==1.20.0
 gluoncv==0.6.0
@@ -137,6 +137,7 @@ pyAudioAnalysis==0.2.5
 pydub==0.23.1
 pyecharts==1.6.2
 pyfunctional==1.3.0
+pygeos==0.9
 pyhdb==0.3.4
 pyinstrument==3.1.0
 pyjanitor==0.20.0
@@ -165,6 +166,7 @@ scikit-plot==0.3.7
 scikit-surprise==1.1.0
 sentencepiece==0.1.85
 shap==0.34.0
+shaply==1.7.1
 sklearn-pandas==1.8.0
 skorch==0.7.0
 smart-open==1.9.0
